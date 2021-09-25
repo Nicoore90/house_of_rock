@@ -41,7 +41,8 @@ main {
   width: 100%;
   max-height: 8%;
   display: flex;
-  margin-top: 20px; }
+  margin-top: 20px;
+  bottom: 0px; }
   .footer__list {
     display: flex;
     justify-content: space-evenly;
@@ -57,7 +58,7 @@ main {
   .footer__link {
     text-decoration: none;
     color: #0d0d0d;
-    font-size: 3em; }
+    font-size: 1em; }
 
 /*ESTILO INDEX*/
 #mainContent {
@@ -70,7 +71,7 @@ main {
     color: #F28705;
     font-size: 1em;
     font-family: "Architects Daughter";
-    text-align: right;
+    text-align: center;
     font-weight: bold;
     display: inline-block;
     width: 100%;
@@ -339,11 +340,14 @@ iframe {
 @media screen and (min-width: 600px) {
   .footer__disclaimer {
     font-size: 1em; }
+  .footer__link {
+    font-size: 3em; }
   #mainContent {
     flex-direction: row; }
     #mainContent .textoInicial {
       font-size: 1.8em;
-      width: 30%; }
+      width: 30%;
+      text-align: right; }
     #mainContent .carousel {
       width: 500px; }
   .pictures {

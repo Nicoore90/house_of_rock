@@ -66,6 +66,7 @@ main {
     max-height: 8%;
     display: flex;
     margin-top: 20px;
+    bottom: 0px;
 
     &__list {
         display: flex;
@@ -86,7 +87,7 @@ main {
     &__link {
         text-decoration: none;
         color: $darkBackground;
-        font-size: 3em;
+        font-size: 1em;
     }
 }
 
@@ -101,7 +102,7 @@ main {
 
     .textoInicial {
         @include text($lightOrange, 1em, 'Architects Daughter');
-        text-align: right;
+        text-align: center;
         font-weight: bold;
         display: inline-block;
         width: 100%;
@@ -539,6 +540,10 @@ iframe {
         &__disclaimer {
             font-size: 1em;
         }
+
+        &__link {
+            font-size: 3em;
+        }
     }
 
     #mainContent {
@@ -547,6 +552,7 @@ iframe {
         .textoInicial {
             font-size: 1.8em;
             width: 30%;
+            text-align: right;
         }
 
         .carousel {

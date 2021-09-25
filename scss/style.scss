@@ -1,0 +1,548 @@
+@import "variables";
+
+@keyframes aparicion {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@mixin text($color, $size, $family){
+    color: $color;
+    font-size: $size;
+    font-family: $family;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*ESTILO GENERAL*/
+
+body {
+    background-color: $darkBackground;
+}
+
+header {
+    background-color: $darkBackground;
+    border-bottom: 1px $darkOrange solid;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    height: auto;
+    padding-bottom: 15px;
+    z-index: 100;
+
+    .navbar-brand {
+        font-family: 'Oswald', sans-serif;
+    }
+
+    #navbarNav {
+        width: 100%;
+        justify-content: flex-end;
+
+        a{
+            font-family: 'Oswald', sans-serif;
+            animation-name: aparicion;
+            animation-duration: 2s;
+        }
+    }
+
+}
+
+main {
+    background-color: $darkBackground;
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+
+.footer {
+    background-color: $darkOrange;
+    width: 100%;
+    max-height: 10%;
+    display: flex;
+    margin-top: 20px;
+
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+        list-style-type: none;
+    }
+
+    &__disclaimer {
+        color: $darkBackground;
+        font-size: 1em;
+        text-align: left;
+        font-family: 'Oswald', sans-serif;
+        padding: 10px;
+        width: 60%;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $darkBackground;
+        font-size: 3em;
+    }
+}
+
+/*ESTILO INDEX*/
+
+#mainContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 200px;
+    flex-direction: column;
+
+    .textoInicial {
+        @include text($lightOrange, 1.8em, 'Architects Daughter');
+        text-align: right;
+        font-weight: bold;
+        display: inline-block;
+        width: 30%;
+        animation-name: aparicion;
+        animation-duration: 2s;
+    }
+    
+    .carousel {
+        height: 300px;
+        width: 500px;
+        animation-name: aparicion;
+        animation-duration: 2s;
+    }
+}
+
+#tituloPrincipal {
+    color: $darkOrange;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    padding-top: 20px;
+}
+
+/*ESTILO GALERIA*/
+
+.productos {
+    display: grid;
+    grid-template-areas: "navProd headProd"
+                         "navProd headGuitar"
+                         "navProd imgGuitar"
+                         "navProd textGuitar"
+                         "navProd headBass"
+                         "navProd imgBass"
+                         "navProd textBass"
+                         "navProd headDrums"
+                         "navProd imgDrums"
+                         "navProd textDrums"
+                         "navProd headAmps"
+                         "navProd imgAmps"
+                         "navProd textAmps";
+    grid-template-rows: repeat(10, 0.2fr);
+    grid-template-columns: 1fr 9fr;
+
+    &__nav {
+        grid-area: navProd;
+        background-image: linear-gradient(to right, $lightOrange, $darkBackground);
+        margin-top: 0px;
+
+        ul {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            li {
+                padding: 10px;
+                list-style-type: none;
+
+                .productos__opciones {
+                    text-decoration: none;
+                    font-family: 'Oswald', sans-serif;
+                    color: $lightOrange;
+                }
+            }
+        }
+    }
+    
+    &__titulo {
+        @extend #tituloPrincipal;
+        grid-area: headProd;
+    }
+    
+    &__guitarra__titulo {
+        grid-area: headGuitar;
+        color: $lightOrange;
+        font-family: 'Architects Daughter', cursive;
+        padding-left: 15px;
+    }
+
+    &__guitarra__imagen {
+        grid-area: imgGuitar;
+        display: flex;
+        justify-content: space-around;
+
+        #guitarOne {
+            height: 10rem;
+            width: 5rem;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+                background-image: linear-gradient(to bottom, #dddddd, $darkBackground);
+            }
+        }
+        
+        
+        #guitarTwo{
+            height: 10rem;
+            width: 4rem;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+                background-image: linear-gradient(to bottom, #dddddd, $darkBackground);
+            }
+        }
+        
+        
+        #guitarThree {
+            height: 10rem;
+            width: 5rem;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+                background-image: linear-gradient(to bottom, #dddddd, $darkBackground);
+            }
+            
+        }
+        
+        
+    }
+
+    &__guitarra__texto {
+        grid-area: textGuitar;
+        display: flex;
+        justify-content: space-around;
+
+        .productos__guitarra__nombre {
+            @include text(#dddddd, 1em, $mainFont)
+        }
+    }
+    
+    &__bajo__titulo {
+        grid-area: headBass;
+        color: $lightOrange;
+        font-family: 'Architects Daughter', cursive;
+        padding-left: 15px;
+    }
+    
+    &__bajo__imagen {
+        grid-area: imgBass;
+        display: flex;
+        justify-content: space-around;
+
+        #bassOne {
+            height: 10rem;
+            width: 5rem;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+                background-image: linear-gradient(to bottom, #dddddd, $darkBackground);
+            }
+            
+        }
+        
+        
+        #bassTwo {
+            height: 10rem;
+            width: 4rem;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+                background-image: linear-gradient(to bottom, #dddddd, $darkBackground);
+            }
+        }
+        
+        
+        #bassThree {
+            height: 10rem;
+            width: 4rem;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+                background-image: linear-gradient(to bottom, #dddddd, $darkBackground);
+            }
+        }
+        
+        
+    }
+
+    &__bajo__texto {
+        grid-area: textBass;
+        display: flex;
+        justify-content: space-around;
+
+        .productos__bajo__nombre {
+            @include text(#dddddd, 1em, $mainFont)
+        }
+    }
+    
+    &__bateria__titulo {
+        grid-area: headDrums;
+        color: $lightOrange;
+        font-family: 'Architects Daughter', cursive;
+        padding-left: 15px;
+    }
+
+    &__bateria__imagen {
+        grid-area: imgDrums;
+        display: flex;
+        justify-content: space-around;
+
+        #drumsOne {
+            height: 10rem;
+            width: 10rem;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+                background-image: linear-gradient(to bottom, #dddddd, $darkBackground);
+            }
+        }
+        
+        
+        
+        #drumsTwo {
+            height: 10rem;
+            width: 10rem;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+                background-image: linear-gradient(to bottom, #dddddd, $darkBackground);
+            }
+        }
+        
+        
+        
+        #drumsThree {
+            height: 10rem;
+            width: 10rem;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+                background-image: linear-gradient(to bottom, #dddddd, $darkBackground);
+            }
+        }
+        
+        
+    }
+
+    &__bateria__texto {
+        grid-area: textDrums;
+        display: flex;
+        justify-content: space-around;
+
+        .productos__bateria__nombre {
+            @include text(#dddddd, 1em, $mainFont)
+        }
+    }
+    
+    &__amp__titulo {
+        grid-area: headAmps;
+        color: $lightOrange;
+        font-family: 'Architects Daughter', cursive;
+        padding-left: 15px;
+    }
+    
+    &__amp__imagen {
+        grid-area: imgAmps;
+        display: flex;
+        justify-content: space-around;
+
+        #ampOne {
+            height: 10rem;
+            width: 10rem;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+                background-image: linear-gradient(to bottom, #dddddd, $darkBackground);
+            }
+        }
+        
+        
+        
+        #ampTwo {
+            height: 10rem;
+            width: 10rem;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+                background-image: linear-gradient(to bottom, #dddddd, $darkBackground);
+            }
+        }
+        
+        
+        
+        #ampThree {
+            height: 10rem;
+            width: 10rem;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+                background-image: linear-gradient(to bottom, #dddddd, $darkBackground);
+            }
+        }
+        
+        
+        
+    }
+
+    &__amp__texto {
+        grid-area: textAmps;
+        display: flex;
+        justify-content: space-around;
+
+        .productos__amp__nombre {
+            @include text(#dddddd, 1em, $mainFont)
+        }
+    }
+}
+
+/*ESTILO HISTORIAS*/
+
+#tituloHistorias {
+    @extend #tituloPrincipal
+}
+
+.historias {
+    &__subtitulo{
+        color: $lightOrange;
+        text-align: center;
+        font-family: Permanent Marker, cursive;
+    }
+
+    &__parrafo{
+        @include text(beige, 1em, $mainFont);
+        text-align: justify;
+        padding: 1em;
+    }
+
+    &__container {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 2em;
+    }
+
+    &__imagen {
+        width: 500px;
+        max-height: 500px;
+        border: $lightOrange 1px solid;
+    }
+}
+
+
+/*ESTILO SOBRE NOSOTROS*/
+
+.sobreNosotros {
+    &__titulo {
+        @extend #tituloPrincipal
+    }
+
+    &__texto {
+        @include text($lightOrange, 30px, $mainFont);
+        padding: 1em;
+
+        .sobreNosotros__link {
+            font-size: 30px;
+            color: $lightOrange;
+            font-family: 'Architects Daughter', cursive;
+            text-decoration: none;
+
+            &:hover {
+                color: $lightOrange;
+            } 
+        }
+    }
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+    &__images {
+        height: 200px;
+        width: 100%;
+        padding: 1em;
+        border: 1px $lightOrange solid;
+    }
+}
+
+/*ESTILO CONTACTOS*/
+
+#tituloContactos {
+    @extend #tituloPrincipal
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10em;
+
+    fieldset {
+        flex-direction: column;
+        width: 50%;
+        padding: 2em;
+
+        .input-group {
+            width: 100%;
+        }
+
+        .btn {
+            margin: 1em;
+        }
+
+        .primaryButton {
+            padding: 1em 2em 1em 2em;
+            background-color: $darkOrange;
+            color: #dddddd;
+            border-radius: 4px;
+            margin-left: 1em;
+        }
+    }
+}
+
+iframe {
+    width: 100%;
+}
+
+
+
+
+@media screen  and (min-width:600px) {
+    #mainContent {
+        flex-direction: row;
+    }
+
+    .pictures {
+        display: flex;
+
+        &__images {
+            width: 25%;
+        }
+    }
+}

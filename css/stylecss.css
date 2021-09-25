@@ -1,0 +1,345 @@
+@keyframes aparicion {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/*ESTILO GENERAL*/
+body {
+  background-color: #0d0d0d; }
+
+header {
+  background-color: #0d0d0d;
+  border-bottom: 1px #BF6B04 solid;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  height: auto;
+  padding-bottom: 15px;
+  z-index: 100; }
+  header .navbar-brand {
+    font-family: 'Oswald', sans-serif; }
+  header #navbarNav {
+    width: 100%;
+    justify-content: flex-end; }
+    header #navbarNav a {
+      font-family: 'Oswald', sans-serif;
+      animation-name: aparicion;
+      animation-duration: 2s; }
+
+main {
+  background-color: #0d0d0d;
+  margin-top: 50px;
+  margin-bottom: -20px; }
+
+.footer {
+  background-color: #BF6B04;
+  width: 100%;
+  max-height: 10%;
+  display: flex;
+  margin-top: 20px; }
+  .footer__list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    list-style-type: none; }
+  .footer__disclaimer {
+    color: #0d0d0d;
+    font-size: 1em;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    width: 60%; }
+  .footer__link {
+    text-decoration: none;
+    color: #0d0d0d;
+    font-size: 3em; }
+
+/*ESTILO INDEX*/
+#mainContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 200px;
+  flex-direction: column; }
+  #mainContent .textoInicial {
+    color: #F28705;
+    font-size: 1.8em;
+    font-family: "Architects Daughter";
+    text-align: right;
+    font-weight: bold;
+    display: inline-block;
+    width: 30%;
+    animation-name: aparicion;
+    animation-duration: 2s; }
+  #mainContent .carousel {
+    height: 300px;
+    width: 500px;
+    animation-name: aparicion;
+    animation-duration: 2s; }
+
+#tituloPrincipal, .productos__titulo, #tituloHistorias, .sobreNosotros__titulo, #tituloContactos {
+  color: #BF6B04;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  padding-top: 20px; }
+
+/*ESTILO GALERIA*/
+.productos {
+  display: grid;
+  grid-template-areas: "navProd headProd" "navProd headGuitar" "navProd imgGuitar" "navProd textGuitar" "navProd headBass" "navProd imgBass" "navProd textBass" "navProd headDrums" "navProd imgDrums" "navProd textDrums" "navProd headAmps" "navProd imgAmps" "navProd textAmps";
+  grid-template-rows: repeat(10, 0.2fr);
+  grid-template-columns: 1fr 9fr; }
+  .productos__nav {
+    grid-area: navProd;
+    background-image: linear-gradient(to right, #F28705, #0d0d0d);
+    margin-top: 0px; }
+    .productos__nav ul {
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .productos__nav ul li {
+        padding: 10px;
+        list-style-type: none; }
+        .productos__nav ul li .productos__opciones {
+          text-decoration: none;
+          font-family: 'Oswald', sans-serif;
+          color: #F28705; }
+  .productos__titulo {
+    grid-area: headProd; }
+  .productos__guitarra__titulo {
+    grid-area: headGuitar;
+    color: #F28705;
+    font-family: 'Architects Daughter', cursive;
+    padding-left: 15px; }
+  .productos__guitarra__imagen {
+    grid-area: imgGuitar;
+    display: flex;
+    justify-content: space-around; }
+    .productos__guitarra__imagen #guitarOne {
+      height: 10rem;
+      width: 5rem;
+      transition: 0.5s; }
+      .productos__guitarra__imagen #guitarOne:hover {
+        transform: scale(1.2, 1.2);
+        background-image: linear-gradient(to bottom, #dddddd, #0d0d0d); }
+    .productos__guitarra__imagen #guitarTwo {
+      height: 10rem;
+      width: 4rem;
+      transition: 0.5s; }
+      .productos__guitarra__imagen #guitarTwo:hover {
+        transform: scale(1.2, 1.2);
+        background-image: linear-gradient(to bottom, #dddddd, #0d0d0d); }
+    .productos__guitarra__imagen #guitarThree {
+      height: 10rem;
+      width: 5rem;
+      transition: 0.5s; }
+      .productos__guitarra__imagen #guitarThree:hover {
+        transform: scale(1.2, 1.2);
+        background-image: linear-gradient(to bottom, #dddddd, #0d0d0d); }
+  .productos__guitarra__texto {
+    grid-area: textGuitar;
+    display: flex;
+    justify-content: space-around; }
+    .productos__guitarra__texto .productos__guitarra__nombre {
+      color: #dddddd;
+      font-size: 1em;
+      font-family: "Architects Daughter", cursive; }
+  .productos__bajo__titulo {
+    grid-area: headBass;
+    color: #F28705;
+    font-family: 'Architects Daughter', cursive;
+    padding-left: 15px; }
+  .productos__bajo__imagen {
+    grid-area: imgBass;
+    display: flex;
+    justify-content: space-around; }
+    .productos__bajo__imagen #bassOne {
+      height: 10rem;
+      width: 5rem;
+      transition: 0.5s; }
+      .productos__bajo__imagen #bassOne:hover {
+        transform: scale(1.2, 1.2);
+        background-image: linear-gradient(to bottom, #dddddd, #0d0d0d); }
+    .productos__bajo__imagen #bassTwo {
+      height: 10rem;
+      width: 4rem;
+      transition: 0.5s; }
+      .productos__bajo__imagen #bassTwo:hover {
+        transform: scale(1.2, 1.2);
+        background-image: linear-gradient(to bottom, #dddddd, #0d0d0d); }
+    .productos__bajo__imagen #bassThree {
+      height: 10rem;
+      width: 4rem;
+      transition: 0.5s; }
+      .productos__bajo__imagen #bassThree:hover {
+        transform: scale(1.2, 1.2);
+        background-image: linear-gradient(to bottom, #dddddd, #0d0d0d); }
+  .productos__bajo__texto {
+    grid-area: textBass;
+    display: flex;
+    justify-content: space-around; }
+    .productos__bajo__texto .productos__bajo__nombre {
+      color: #dddddd;
+      font-size: 1em;
+      font-family: "Architects Daughter", cursive; }
+  .productos__bateria__titulo {
+    grid-area: headDrums;
+    color: #F28705;
+    font-family: 'Architects Daughter', cursive;
+    padding-left: 15px; }
+  .productos__bateria__imagen {
+    grid-area: imgDrums;
+    display: flex;
+    justify-content: space-around; }
+    .productos__bateria__imagen #drumsOne {
+      height: 10rem;
+      width: 10rem;
+      transition: 0.5s; }
+      .productos__bateria__imagen #drumsOne:hover {
+        transform: scale(1.2, 1.2);
+        background-image: linear-gradient(to bottom, #dddddd, #0d0d0d); }
+    .productos__bateria__imagen #drumsTwo {
+      height: 10rem;
+      width: 10rem;
+      transition: 0.5s; }
+      .productos__bateria__imagen #drumsTwo:hover {
+        transform: scale(1.2, 1.2);
+        background-image: linear-gradient(to bottom, #dddddd, #0d0d0d); }
+    .productos__bateria__imagen #drumsThree {
+      height: 10rem;
+      width: 10rem;
+      transition: 0.5s; }
+      .productos__bateria__imagen #drumsThree:hover {
+        transform: scale(1.2, 1.2);
+        background-image: linear-gradient(to bottom, #dddddd, #0d0d0d); }
+  .productos__bateria__texto {
+    grid-area: textDrums;
+    display: flex;
+    justify-content: space-around; }
+    .productos__bateria__texto .productos__bateria__nombre {
+      color: #dddddd;
+      font-size: 1em;
+      font-family: "Architects Daughter", cursive; }
+  .productos__amp__titulo {
+    grid-area: headAmps;
+    color: #F28705;
+    font-family: 'Architects Daughter', cursive;
+    padding-left: 15px; }
+  .productos__amp__imagen {
+    grid-area: imgAmps;
+    display: flex;
+    justify-content: space-around; }
+    .productos__amp__imagen #ampOne {
+      height: 10rem;
+      width: 10rem;
+      transition: 0.5s; }
+      .productos__amp__imagen #ampOne:hover {
+        transform: scale(1.2, 1.2);
+        background-image: linear-gradient(to bottom, #dddddd, #0d0d0d); }
+    .productos__amp__imagen #ampTwo {
+      height: 10rem;
+      width: 10rem;
+      transition: 0.5s; }
+      .productos__amp__imagen #ampTwo:hover {
+        transform: scale(1.2, 1.2);
+        background-image: linear-gradient(to bottom, #dddddd, #0d0d0d); }
+    .productos__amp__imagen #ampThree {
+      height: 10rem;
+      width: 10rem;
+      transition: 0.5s; }
+      .productos__amp__imagen #ampThree:hover {
+        transform: scale(1.2, 1.2);
+        background-image: linear-gradient(to bottom, #dddddd, #0d0d0d); }
+  .productos__amp__texto {
+    grid-area: textAmps;
+    display: flex;
+    justify-content: space-around; }
+    .productos__amp__texto .productos__amp__nombre {
+      color: #dddddd;
+      font-size: 1em;
+      font-family: "Architects Daughter", cursive; }
+
+/*ESTILO HISTORIAS*/
+.historias__subtitulo {
+  color: #F28705;
+  text-align: center;
+  font-family: Permanent Marker, cursive; }
+
+.historias__parrafo {
+  color: beige;
+  font-size: 1em;
+  font-family: "Architects Daughter", cursive;
+  text-align: justify;
+  padding: 1em; }
+
+.historias__container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 2em; }
+
+.historias__imagen {
+  width: 500px;
+  max-height: 500px;
+  border: #F28705 1px solid; }
+
+/*ESTILO SOBRE NOSOTROS*/
+.sobreNosotros__texto {
+  color: #F28705;
+  font-size: 30px;
+  font-family: "Architects Daughter", cursive;
+  padding: 1em; }
+  .sobreNosotros__texto .sobreNosotros__link {
+    font-size: 30px;
+    color: #F28705;
+    font-family: 'Architects Daughter', cursive;
+    text-decoration: none; }
+    .sobreNosotros__texto .sobreNosotros__link:hover {
+      color: #F28705; }
+
+.pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%; }
+  .pictures__images {
+    height: 200px;
+    width: 100%;
+    padding: 1em;
+    border: 1px #F28705 solid; }
+
+/*ESTILO CONTACTOS*/
+form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10em; }
+  form fieldset {
+    flex-direction: column;
+    width: 50%;
+    padding: 2em; }
+    form fieldset .input-group {
+      width: 100%; }
+    form fieldset .btn {
+      margin: 1em; }
+    form fieldset .primaryButton {
+      padding: 1em 2em 1em 2em;
+      background-color: #BF6B04;
+      color: #dddddd;
+      border-radius: 4px;
+      margin-left: 1em; }
+
+iframe {
+  width: 100%; }
+
+@media screen and (min-width: 600px) {
+  #mainContent {
+    flex-direction: row; }
+  .pictures {
+    display: flex; }
+    .pictures__images {
+      width: 25%; } }

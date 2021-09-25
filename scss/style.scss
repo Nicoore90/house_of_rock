@@ -76,7 +76,7 @@ main {
 
     &__disclaimer {
         color: $darkBackground;
-        font-size: 1em;
+        font-size: 0.5em;
         text-align: left;
         font-family: 'Oswald', sans-serif;
         padding: 10px;
@@ -100,11 +100,11 @@ main {
     flex-direction: column;
 
     .textoInicial {
-        @include text($lightOrange, 1.8em, 'Architects Daughter');
+        @include text($lightOrange, 1em, 'Architects Daughter');
         text-align: right;
         font-weight: bold;
         display: inline-block;
-        width: 30%;
+        width: 50%;
         animation-name: aparicion;
         animation-duration: 2s;
     }
@@ -534,8 +534,20 @@ iframe {
 
 
 @media screen  and (min-width:600px) {
+
+    .footer {
+        &__disclaimer {
+            font-size: 1em;
+        }
+    }
+
     #mainContent {
         flex-direction: row;
+
+        .textoInicial {
+            font-size: 1.8em;
+            width: 30%;
+        }
     }
 
     .pictures {

@@ -49,7 +49,7 @@ main {
     list-style-type: none; }
   .footer__disclaimer {
     color: #0d0d0d;
-    font-size: 1em;
+    font-size: 0.5em;
     text-align: left;
     font-family: 'Oswald', sans-serif;
     padding: 10px;
@@ -68,12 +68,12 @@ main {
   flex-direction: column; }
   #mainContent .textoInicial {
     color: #F28705;
-    font-size: 1.8em;
+    font-size: 1em;
     font-family: "Architects Daughter";
     text-align: right;
     font-weight: bold;
     display: inline-block;
-    width: 30%;
+    width: 50%;
     animation-name: aparicion;
     animation-duration: 2s; }
   #mainContent .carousel {
@@ -337,8 +337,13 @@ iframe {
   width: 100%; }
 
 @media screen and (min-width: 600px) {
+  .footer__disclaimer {
+    font-size: 1em; }
   #mainContent {
     flex-direction: row; }
+    #mainContent .textoInicial {
+      font-size: 1.8em;
+      width: 30%; }
   .pictures {
     display: flex; }
     .pictures__images {

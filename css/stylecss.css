@@ -19,7 +19,7 @@ header {
   position: fixed;
   top: 0px;
   height: auto;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
   z-index: 100; }
   header .navbar-brand {
     font-family: 'Oswald', sans-serif; }
@@ -39,7 +39,7 @@ main {
 .footer {
   background-color: #BF6B04;
   width: 100%;
-  max-height: 10%;
+  max-height: 8%;
   display: flex;
   margin-top: 20px; }
   .footer__list {
@@ -73,12 +73,12 @@ main {
     text-align: right;
     font-weight: bold;
     display: inline-block;
-    width: 50%;
+    width: 100%;
     animation-name: aparicion;
     animation-duration: 2s; }
   #mainContent .carousel {
     height: 300px;
-    width: 500px;
+    width: 100%;
     animation-name: aparicion;
     animation-duration: 2s; }
 
@@ -344,6 +344,8 @@ iframe {
     #mainContent .textoInicial {
       font-size: 1.8em;
       width: 30%; }
+    #mainContent .carousel {
+      width: 500px; }
   .pictures {
     display: flex; }
     .pictures__images {

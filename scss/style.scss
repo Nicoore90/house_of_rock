@@ -506,7 +506,7 @@ form {
 
     fieldset {
         flex-direction: column;
-        width: 50%;
+        width: 100%;
         padding: 2em;
 
         .input-group {
@@ -572,6 +572,12 @@ iframe {
         &__imagen {
             width: 500px;
             height: 300px;
+        }
+    }
+
+    form {
+        fieldset {
+            width: 50%;
         }
     }
 }

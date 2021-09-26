@@ -148,6 +148,7 @@ main {
         grid-area: navProd;
         background-image: linear-gradient(to right, $lightOrange, $darkBackground);
         margin-top: 0px;
+        height: 100%;
 
         ul {
             height: 50%;
@@ -448,8 +449,8 @@ main {
     }
 
     &__imagen {
-        width: 500px;
-        max-height: 500px;
+        width: 400px;
+        height: 250px;
         border: $lightOrange 1px solid;
     }
 }
@@ -564,6 +565,13 @@ iframe {
 
         &__images {
             width: 25%;
+        }
+    }
+
+    .historias {
+        &__imagen {
+            width: 500px;
+            height: 300px;
         }
     }
 }

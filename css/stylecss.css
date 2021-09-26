@@ -97,7 +97,8 @@ main {
   .productos__nav {
     grid-area: navProd;
     background-image: linear-gradient(to right, #F28705, #0d0d0d);
-    margin-top: 0px; }
+    margin-top: 0px;
+    height: 100%; }
     .productos__nav ul {
       height: 50%;
       display: flex;
@@ -285,8 +286,8 @@ main {
   margin-bottom: 2em; }
 
 .historias__imagen {
-  width: 500px;
-  max-height: 500px;
+  width: 400px;
+  height: 250px;
   border: #F28705 1px solid; }
 
 /*ESTILO SOBRE NOSOTROS*/
@@ -352,4 +353,7 @@ iframe {
   .pictures {
     display: flex; }
     .pictures__images {
-      width: 25%; } }
+      width: 25%; }
+  .historias__imagen {
+    width: 500px;
+    height: 300px; } }

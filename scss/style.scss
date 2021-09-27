@@ -470,11 +470,11 @@ main {
     }
 
     &__texto {
-        @include text($lightOrange, 30px, $mainFont);
+        @include text($lightOrange, 15px, $mainFont);
         padding: 1em;
 
         .sobreNosotros__link {
-            font-size: 30px;
+            font-size: 15px;
             color: $lightOrange;
             font-family: 'Architects Daughter', cursive;
             text-decoration: none;
@@ -494,7 +494,6 @@ main {
     &__images {
         height: 200px;
         width: 100%;
-        padding: 1em;
         border: 1px $lightOrange solid;
     }
 }
@@ -674,6 +673,7 @@ iframe {
 
         &__images {
             width: 25%;
+            padding: 1em;
         }
     }
 
@@ -681,6 +681,15 @@ iframe {
         &__imagen {
             width: 500px;
             height: 300px;
+        }
+    }
+
+    .sobreNosotros {
+        &__texto {
+            @include text($lightOrange, 30px, $mainFont);
+            .sobreNosotros__link {
+                font-size: 30px;
+            }
         }
     }
 

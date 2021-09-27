@@ -299,11 +299,11 @@ main {
 /*ESTILO SOBRE NOSOTROS*/
 .sobreNosotros__texto {
   color: #F28705;
-  font-size: 30px;
+  font-size: 15px;
   font-family: "Architects Daughter", cursive;
   padding: 1em; }
   .sobreNosotros__texto .sobreNosotros__link {
-    font-size: 30px;
+    font-size: 15px;
     color: #F28705;
     font-family: 'Architects Daughter', cursive;
     text-decoration: none; }
@@ -317,7 +317,6 @@ main {
   .pictures__images {
     height: 200px;
     width: 100%;
-    padding: 1em;
     border: 1px #F28705 solid; }
 
 /*ESTILO CONTACTOS*/
@@ -422,9 +421,16 @@ iframe {
   .pictures {
     display: flex; }
     .pictures__images {
-      width: 25%; }
+      width: 25%;
+      padding: 1em; }
   .historias__imagen {
     width: 500px;
     height: 300px; }
+  .sobreNosotros__texto {
+    color: #F28705;
+    font-size: 30px;
+    font-family: "Architects Daughter", cursive; }
+    .sobreNosotros__texto .sobreNosotros__link {
+      font-size: 30px; }
   form fieldset {
     width: 50%; } }

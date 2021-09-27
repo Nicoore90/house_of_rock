@@ -98,21 +98,25 @@ main {
     grid-area: navProd;
     background-image: linear-gradient(to right, #F28705, #0d0d0d);
     margin-top: 0px;
-    height: 100%; }
+    height: 100%;
+    display: none; }
     .productos__nav ul {
       height: 50%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      padding-left: 0px; }
+      padding-left: 0px;
+      display: none; }
       .productos__nav ul li {
         padding: 0px;
-        list-style-type: none; }
+        list-style-type: none;
+        display: none; }
         .productos__nav ul li .productos__opciones {
           text-decoration: none;
           font-family: 'Oswald', sans-serif;
           color: #F28705;
-          font-size: 0.5em; }
+          font-size: 0.5em;
+          display: none; }
   .productos__titulo {
     grid-area: headProd; }
   .productos__guitarra__titulo {
@@ -352,8 +356,17 @@ iframe {
       text-align: right; }
     #mainContent .carousel {
       width: 500px; }
-  .productos__nav ul li .productos__opciones {
-    font-size: 1em; }
+  .productos__nav {
+    display: flex; }
+    .productos__nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .productos__nav ul li {
+        display: block; }
+        .productos__nav ul li .productos__opciones {
+          font-size: 1em;
+          display: inline-block; }
   .productos__guitarra__imagen #guitarOne {
     height: 10em;
     width: 5em; }

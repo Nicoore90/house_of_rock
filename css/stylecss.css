@@ -338,6 +338,8 @@ form {
       color: #dddddd;
       border-radius: 4px;
       margin-left: 1em; }
+    form fieldset .form-check-label {
+      color: #F28705; }
 
 iframe {
   width: 100%; }

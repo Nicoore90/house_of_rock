@@ -69,7 +69,7 @@ main {
   justify-content: space-around;
   align-items: center;
   padding-bottom: 100px;
-  flex-direction: column; }
+  flex-direction: column-reverse; }
   #mainContent .textoInicial {
     color: #F28705;
     font-size: 1em;

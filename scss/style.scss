@@ -129,6 +129,11 @@ main {
     background-color: black;
     display: flex;
     justify-content: center;
+
+    &__imagen {
+        height: 88.5px;
+        width: 250px;
+    }
 }
 
 /*ESTILO GALERIA*/
@@ -573,6 +578,13 @@ iframe {
         }
 
         .carousel {
+            width: 500px;
+        }
+    }
+
+    .logo {
+        &__imagen {
+            height: 177px;
             width: 500px;
         }
     }

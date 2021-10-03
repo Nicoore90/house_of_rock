@@ -93,6 +93,9 @@ main {
   background-color: black;
   display: flex;
   justify-content: center; }
+  .logo__imagen {
+    height: 88.5px;
+    width: 250px; }
 
 /*ESTILO GALERIA*/
 .productos {
@@ -364,6 +367,9 @@ iframe {
       text-align: right; }
     #mainContent .carousel {
       width: 500px; }
+  .logo__imagen {
+    height: 177px;
+    width: 500px; }
   .productos__nav {
     display: flex; }
     .productos__nav ul {

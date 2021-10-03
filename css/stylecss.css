@@ -46,14 +46,17 @@ main {
     display: flex;
     justify-content: space-evenly;
     width: 40%;
-    list-style-type: none; }
+    list-style-type: none;
+    align-self: center;
+    margin-bottom: 0px; }
   .footer__disclaimer {
     color: #0d0d0d;
     font-size: 0.5em;
     text-align: left;
     font-family: 'Oswald', sans-serif;
-    padding: 10px;
-    width: 60%; }
+    padding: 10px 10px 0px 10px;
+    width: 60%;
+    align-self: center; }
   .footer__link {
     text-decoration: none;
     color: #0d0d0d;
@@ -64,7 +67,7 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   flex-direction: column; }
   #mainContent .textoInicial {
     color: #F28705;
@@ -81,6 +84,8 @@ main {
     width: 100%;
     animation-name: aparicion;
     animation-duration: 2s; }
+    #mainContent .carousel .d-block {
+      border-radius: 500px; }
 
 #tituloPrincipal, .productos__titulo, #tituloHistorias, .sobreNosotros__titulo, #tituloContactos {
   color: #BF6B04;
@@ -362,7 +367,7 @@ iframe {
   #mainContent {
     flex-direction: row; }
     #mainContent .textoInicial {
-      font-size: 1.8em;
+      font-size: 1.5em;
       width: 30%;
       text-align: right; }
     #mainContent .carousel {

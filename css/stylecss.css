@@ -88,6 +88,12 @@ main {
   font-family: 'Permanent Marker', cursive;
   padding-top: 20px; }
 
+.logo {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center; }
+
 /*ESTILO GALERIA*/
 .productos {
   display: grid;
@@ -114,7 +120,7 @@ main {
         .productos__nav ul li .productos__opciones {
           text-decoration: none;
           font-family: 'Oswald', sans-serif;
-          color: #F28705;
+          color: beige;
           font-size: 0.5em;
           display: none; }
   .productos__titulo {
@@ -342,7 +348,8 @@ form {
       color: #F28705; }
 
 iframe {
-  width: 100%; }
+  width: 100%;
+  padding: 0em 5em; }
 
 @media screen and (min-width: 600px) {
   .footer__disclaimer {

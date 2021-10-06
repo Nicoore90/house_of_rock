@@ -451,8 +451,12 @@ iframe {
   .sobreNosotros__texto {
     color: #F28705;
     font-size: 30px;
-    font-family: "Architects Daughter", cursive; }
+    font-family: "Architects Daughter", cursive;
+    animation-name: aparicion;
+    animation-duration: 2s; }
     .sobreNosotros__texto .sobreNosotros__link {
-      font-size: 30px; }
+      font-size: 30px;
+      animation-name: aparicion;
+      animation-duration: 2s; }
   form fieldset {
     width: 50%; } }

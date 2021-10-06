@@ -721,8 +721,12 @@ iframe {
     .sobreNosotros {
         &__texto {
             @include text($lightOrange, 30px, $mainFont);
+            animation-name: aparicion;
+            animation-duration: 2s;
             .sobreNosotros__link {
                 font-size: 30px;
+                animation-name: aparicion;
+                animation-duration: 2s;
             }
         }
     }

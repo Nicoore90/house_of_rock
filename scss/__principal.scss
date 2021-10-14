@@ -1,0 +1,51 @@
+/*ESTILO INDEX*/
+
+#mainContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 100px;
+    flex-direction: column-reverse;
+
+    .textoInicial {
+        @include text($lightOrange, 1em, 'Architects Daughter');
+        text-align: center;
+        font-weight: bold;
+        display: inline-block;
+        width: 100%;
+        animation-name: aparicion;
+        animation-duration: 2s;
+    }
+    
+    .carousel {
+        height: 300px;
+        width: 100%;
+        animation-name: aparicion;
+        animation-duration: 2s;
+        
+
+        .d-block {
+            border-radius: 500px;
+        }
+    }
+}
+
+#tituloPrincipal {
+    color: $darkOrange;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    padding-top: 20px;
+}
+
+.logo {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    &__imagen {
+        height: 88.5px;
+        width: 250px;
+    }
+}

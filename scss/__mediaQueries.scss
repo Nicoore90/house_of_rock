@@ -1,0 +1,183 @@
+@media screen  and (min-width:600px) {
+
+    // GENERAL
+
+    .footer {
+        &__disclaimer {
+            font-size: 1em;
+        }
+
+        &__link {
+            font-size: 3em;
+        }
+    }
+
+    // INDEX
+
+    #mainContent {
+        flex-direction: row;
+
+        .textoInicial {
+            font-size: 1.5em;
+            width: 30%;
+            text-align: right;
+        }
+
+        .carousel {
+            width: 500px;
+        }
+    }
+
+    .logo {
+        &__imagen {
+            height: 177px;
+            width: 500px;
+        }
+    }
+
+    // GALERIA
+
+    .productos {
+        &__nav {
+            display: flex;
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                li {
+                    display: block;
+                    .productos__opciones {
+                        font-size: 1em;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        &__guitarra__imagen {
+            #guitarOne {
+                height: 10em;
+                width: 5em;
+            }
+            #guitarTwo {
+                height: 10em;
+                width: 4em;
+            }
+            #guitarThree {
+                height: 10em;
+                width: 5em;
+            }
+
+        }
+
+        &__guitarra__texto {
+            .productos__guitarra__nombre {
+                @include text(#dddddd, 1em, $mainFont)
+            }
+        }
+
+        &__bajo__imagen {
+            #bassOne {
+                height: 10rem;
+                width: 5rem;
+            }
+
+            #bassTwo {
+                height: 10rem;
+                width: 4rem;
+            }
+
+            #bassThree {
+                height: 10rem;
+                width: 4rem;
+            }
+        }
+
+        &__bajo__texto {
+            .productos__bajo__nombre {
+                @include text(#dddddd, 1em, $mainFont)
+            }
+        }
+
+        &__bateria__imagen{
+            #drumsOne {
+                height: 10rem;
+                width: 10rem;
+            }
+            #drumsTwo {
+                height: 10rem;
+                width: 10rem;
+            }
+            #drumsThree {
+                height: 10rem;
+                width: 10rem;
+            }
+        }
+
+        &__bateria__texto {
+            .productos__bateria__nombre {
+                @include text(#dddddd, 1em, $mainFont)
+            }
+        }
+
+        &__amp__imagen {
+            #ampOne {
+                height: 10rem;
+                width: 10rem;
+            }
+            #ampTwo {
+                height: 10rem;
+                width: 10rem;
+            }
+            #ampThree {
+                height: 10rem;
+                width: 10rem;
+            }
+        }
+
+        &__amp__texto {
+            .productos__amp__nombre {
+                @include text(#dddddd, 1em, $mainFont)
+            }
+        }
+    }
+    .pictures {
+        display: flex;
+
+        &__images {
+            width: 25%;
+            padding: 1em;
+        }
+    }
+
+    // HISTORIAS
+
+    .historias {
+        &__imagen {
+            width: 500px;
+            height: 300px;
+        }
+    }
+
+    // SOBRE NOSOTROS
+
+    .sobreNosotros {
+        &__texto {
+            @include text($lightOrange, 30px, $mainFont);
+            animation-name: aparicion;
+            animation-duration: 2s;
+            .sobreNosotros__link {
+                font-size: 30px;
+                animation-name: aparicion;
+                animation-duration: 2s;
+            }
+        }
+    }
+
+    // CONTACTOS
+
+    form {
+        fieldset {
+            width: 50%;
+        }
+    }
+}

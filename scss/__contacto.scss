@@ -1,0 +1,42 @@
+/*ESTILO CONTACTO*/
+
+#tituloContactos {
+    @extend #tituloPrincipal
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10em;
+
+    fieldset {
+        flex-direction: column;
+        width: 100%;
+        padding: 2em;
+
+        .input-group {
+            width: 100%;
+        }
+
+        .btn {
+            margin: 1em;
+        }
+
+        .primaryButton {
+            padding: 1em 2em 1em 2em;
+            background-color: $darkOrange;
+            color: #dddddd;
+            border-radius: 4px;
+            margin-left: 1em;
+        }
+
+        .form-check-label {
+            color: $lightOrange;
+        }
+    }
+}
+
+iframe {
+    width: 100%;
+    padding: 0em 5em;
+}

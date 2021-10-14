@@ -1,12 +1,12 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
 @keyframes aparicion {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
-
-* {
-  margin: 0px;
-  padding: 0px; }
 
 /*ESTILO GENERAL*/
 body {
@@ -335,7 +335,7 @@ main {
     width: 100%;
     border: 1px #F28705 solid; }
 
-/*ESTILO CONTACTOS*/
+/*ESTILO CONTACTO*/
 form {
   display: flex;
   justify-content: center;

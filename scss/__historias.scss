@@ -1,0 +1,33 @@
+/*ESTILO HISTORIAS*/
+
+#tituloHistorias {
+    @extend #tituloPrincipal
+}
+
+.historias {
+    &__subtitulo{
+        color: $lightOrange;
+        text-align: center;
+        font-family: Permanent Marker, cursive;
+    }
+
+    &__parrafo{
+        @include text(beige, 1em, $mainFont);
+        text-align: justify;
+        padding: 1em;
+    }
+
+    &__container {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 2em;
+    }
+
+    &__imagen {
+        width: 400px;
+        height: 250px;
+        border: $lightOrange 1px solid;
+    }
+}
+

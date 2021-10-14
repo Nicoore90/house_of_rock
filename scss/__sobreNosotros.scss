@@ -1,0 +1,35 @@
+/*ESTILO SOBRE NOSOTROS*/
+
+.sobreNosotros {
+    &__titulo {
+        @extend #tituloPrincipal
+    }
+
+    &__texto {
+        @include text($lightOrange, 15px, $mainFont);
+        padding: 0.5em;
+
+        .sobreNosotros__link {
+            font-size: 15px;
+            color: $lightOrange;
+            font-family: 'Architects Daughter', cursive;
+            text-decoration: none;
+
+            &:hover {
+                color: $lightOrange;
+            } 
+        }
+    }
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+    &__images {
+        height: 200px;
+        width: 100%;
+        border: 1px $lightOrange solid;
+    }
+}
